@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.address {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.address h1 {
+    font-size: 3rem;
+    color: #a29bfe;
+    text-shadow: 0 0 10px #6c5ce7;
+}
+
+/* Input Section Styles */
+.num {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#numbooks {
+    border: 2px solid #6c5ce7;
+    border-radius: 6px;
+    padding: 10px;
+    width: 200px;
+    background-color: #1e1e2f;
+    color: #fff;
+}
+
+.confirm {
+    background-color: #6c5ce7;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background 0.3s ease;
+}
+
+.confirm:hover {
+    background-color: #4834d4;
+}
+
+#output {
+    color: #ff7675;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Form Styles */
+#bookForm {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.style {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #6c5ce7;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1e1e2f;
+    color: #fff;
+}
+
+.error {
+    color: #ff7675;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Table Styles */
+#bookTable {
+    display: none;
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#bookTable th, #bookTable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #dfe6e9;
+}
+
+#bookTable th {
+    background-color: #2d3436;
+    color: #a29bfe;
+}
+
+.btn {
+    background-color: #d63031;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    #numbooks {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .confirm {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #bookForm {
+        padding: 15px;
+    }
+
+    #bookTable th, #bookTable td {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+}

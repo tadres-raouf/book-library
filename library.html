@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK Library</title>
+    <link rel="stylesheet" href="library.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="address">
+            <h1>BOOK Library</h1>
+        </div>
+        
+        <!-- Input Section -->
+        <div class="num" id="inputSection">
+            <div class="question">
+                <label for="numbooks">How Many Books?</label>
+                <input type="number" id="numbooks" min="1">
+                <button onclick="numberBooks()" class="confirm">OK</button>
+            </div>
+            <p id="output"></p>
+        </div>
+        
+        <!-- Form Section -->
+        <div class="section" id="formSection">
+            <form id="bookForm">
+                <div class="form-group">
+                    <label class="label">Book's Name</label>
+                    <input type="text" class="style" id="bookName" placeholder="Enter Book Name">
+                    <div class="error" id="nameError">Please enter a valid book name (letters, numbers, spaces, and punctuation)</div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Price</label>
+                    <input type="text" class="style" id="bookPrice" placeholder="Book Price">
+                    <div class="error" id="priceError">Please enter a valid price (numbers only, e.g. 50 or 29.99)</div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Author Name</label>
+                    <input type="text" class="style" id="authorName" placeholder="Enter Author Name">
+                    <div class="error" id="authorNameError">Please enter a valid author name (letters and spaces only)</div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Author E-mail</label>
+                    <input type="text" class="style" id="authorEmail" placeholder="Enter Author E-mail">
+                    <div class="error" id="emailError">Please enter a valid email address</div>
+                </div>
+                <div style="text-align: center;">
+                    <button type="button" onclick="addBook()" class="confirm">Add Book</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Table Section -->
+        <div class="section" id="tableSection">
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Price</th>
+                        <th>Author Name</th>
+                        <th>Author E-mail</th>
+                        <th colspan="2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTableBody">
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="library.js"> 
+       
+    </script>
+</body>
+</html>
